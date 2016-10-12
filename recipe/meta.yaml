@@ -10,7 +10,7 @@ source:
   md5: c08ebebc7a60629ebadf685361ca0798
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt
+    - pyqt 4.11.*
     - traitlets
 
   run:
@@ -29,7 +29,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt
+    - pyqt 4.11.*
     - traitlets
 
 test:
