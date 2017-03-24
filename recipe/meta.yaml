@@ -7,10 +7,10 @@ package:
 source:
   fn: qtconsole-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  md5: c08ebebc7a60629ebadf685361ca0798
+  sha256: 25ec7d345528b3e8f3c91be349dd3c699755f206dc4b6ec668e2e5dd60ea18ef
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt 4.11.*
+    - pyqt 5.6.*
     - traitlets
 
   run:
@@ -29,7 +29,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt 4.11.*
+    - pyqt 5.6.*
     - traitlets
 
 test:
@@ -44,6 +44,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD 3-Clause
+  license_file: COPYING.md
   summary: Jupyter Qt console
 
 extra:
@@ -53,3 +54,4 @@ extra:
     - jakirkham
     - minrk
     - takluyver
+    - ocefpaf
