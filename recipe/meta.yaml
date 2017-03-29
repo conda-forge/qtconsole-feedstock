@@ -1,4 +1,4 @@
-{% set version = "4.2.1" %}
+{% set version = "4.3.0" %}
 
 package:
   name: qtconsole
@@ -7,10 +7,10 @@ package:
 source:
   fn: qtconsole-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 25ec7d345528b3e8f3c91be349dd3c699755f206dc4b6ec668e2e5dd60ea18ef
+  sha256: 2821ccf85853b83e4958521f82e36325208787eaf79b19b83905a99cc41aa209
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt 5.6.*
+    - pyqt
     - traitlets
 
   run:
@@ -29,7 +29,7 @@ requirements:
     - jupyter_client >=4.1
     - jupyter_core
     - pygments
-    - pyqt 5.6.*
+    - pyqt
     - traitlets
 
 test:
