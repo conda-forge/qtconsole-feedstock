@@ -1,4 +1,4 @@
-{% set version = "4.3.1" %}
+{% set version = "4.4.0" %}
 
 package:
   name: qtconsole
@@ -7,7 +7,7 @@ package:
 source:
   fn: qtconsole-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: eff8c2faeda567a0bef5781f419a64e9977988db101652b312b9d74ec0a5109c
+  sha256: ce568a8867c47d947fbf1f5b68872554aa52338fabddd083a3bc203b3609e530
 
 build:
   number: 0
@@ -44,7 +44,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD 3-Clause
-  license_file: COPYING.md
+  license_file: LICENSE
   summary: Jupyter Qt console
 
 extra:
