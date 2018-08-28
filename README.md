@@ -9,6 +9,12 @@ Feedstock license: BSD 3-Clause
 
 Summary: Jupyter Qt console
 
+A rich Qt-based console for working with Jupyter kernels, supporting rich
+media output, session export, and more. The Qt console is a very
+lightweight application that largely feels like a terminal, but provides
+a number of enhancements only possible in a GUI, such as inline figures,
+proper multiline editing with syntax highlighting, graphical calltips, and
+more.
 
 
 Current build status
