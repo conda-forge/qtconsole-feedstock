@@ -9,7 +9,8 @@ source:
   sha256: faa529167b22412ea51ea44f20728a602415734d2229721d1194cea47cb730fa
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -27,8 +28,7 @@ requirements:
 
 test:
   commands:
-    - jupyter qtconsole --help                                              # [not linux]
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'jupyter qtconsole --help'  # [linux]
+    - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'jupyter qtconsole --help'
 
   imports:
     - qtconsole
