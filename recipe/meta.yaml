@@ -29,9 +29,6 @@ requirements:
     - traitlets
 
 test:
-  requires:
-    # This is here until the migration to 1.1 is finished.
-    - openssl 1.0
   commands:
     - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'jupyter qtconsole --help'
 
