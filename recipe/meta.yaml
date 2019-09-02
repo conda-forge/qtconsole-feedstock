@@ -1,4 +1,4 @@
-{% set version = "4.5.4" %}
+{% set version = "4.5.5" %}
 
 package:
   name: qtconsole
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 756bdcb6de6900dc50b14430accff2e47b846c3e7820e04075d4067b4c0ab52f
+  sha256: b91e7412587e6cfe1644696538f73baf5611e837be5406633218443b2827c6d9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - jupyter-qtconsole = qtconsole.qtconsoleapp:main
 
@@ -21,12 +21,13 @@ requirements:
     - pip
   run:
     - python
-    - ipykernel >=4.1
-    - jupyter_client >=4.1
-    - jupyter_core
-    - pygments
     - pyqt
     - traitlets
+    - ipython_genutils
+    - jupyter_core
+    - jupyter_client >=4.1
+    - pygments
+    - ipykernel>=4.1  # not a real dependency, but require the reference kernel
 
 test:
   commands:
