@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - jupyter-qtconsole = qtconsole.qtconsoleapp:main
 
@@ -21,12 +21,13 @@ requirements:
     - pip
   run:
     - python
-    - ipykernel >=4.1
-    - jupyter_client >=4.1
-    - jupyter_core
-    - pygments
     - pyqt
     - traitlets
+    - ipython_genutils
+    - jupyter_core
+    - jupyter_client >=4.1
+    - pygments
+    - ipykernel>=4.1  # not a real dependency, but require the reference kernel
 
 test:
   commands:
