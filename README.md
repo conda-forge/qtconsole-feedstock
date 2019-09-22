@@ -21,11 +21,57 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>Appveyor</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5495&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtconsole-feedstock?branchName=master">
+      <a href="https://ci.appveyor.com/project/conda-forge/qtconsole-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/qtconsole-feedstock/master.svg?label=Windows">
       </a>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5495&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtconsole-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5495&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtconsole-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5495&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtconsole-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5495&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtconsole-feedstock?branchName=master&jobName=win&configuration=win_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
@@ -36,6 +82,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-qtconsole-green.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-qtconsole--base-green.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) |
 
 Installing qtconsole
 ====================
@@ -46,10 +93,10 @@ Installing `qtconsole` from the `conda-forge` channel can be achieved by adding 
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `qtconsole` can be installed with:
+Once the `conda-forge` channel has been enabled, `qtconsole, qtconsole-base` can be installed with:
 
 ```
-conda install qtconsole
+conda install qtconsole qtconsole-base
 ```
 
 It is possible to list all of the versions of `qtconsole` available on your platform with:
