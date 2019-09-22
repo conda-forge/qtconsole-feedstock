@@ -1,7 +1,7 @@
 {% set version = "4.5.5" %}
 
 package:
-  name: qtconsole
+  name: qtconsole-base
   version: {{ version }}
 
 source:
@@ -39,8 +39,13 @@ test:
 outputs:
   - name: qtconsole-base
   - name: qtconsole
+    build:
+      noarch: python
     requirements:
+      host:
+        - python
       run:
+        - python
         - {{ pin_subpackage('qtconsole-base', exact=True) }}
         - pyqt
 about:
