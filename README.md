@@ -3,11 +3,15 @@ About qtconsole
 
 Home: http://jupyter.org
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qtconsole-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter Qt console
+
+Development: https://github.com/jupyter/qtconsole
+
+Documentation: https://qtconsole.readthedocs.org/en/stable/
 
 A rich Qt-based console for working with Jupyter kernels, supporting rich
 media output, session export, and more. The Qt console is a very
