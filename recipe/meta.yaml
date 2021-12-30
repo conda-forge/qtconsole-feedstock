@@ -1,7 +1,7 @@
 {% set version = "5.2.2" %}
 
 package:
-  name: qtconsole
+  name: qtconsole-base
   version: {{ version }}
 
 source:
@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jupyter-qtconsole = qtconsole.qtconsoleapp:main
@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pyqt
     - traitlets
     - ipython_genutils
     - jupyter_core
@@ -37,6 +36,19 @@ test:
   imports:
     - qtconsole
     - qtconsole.tests
+
+outputs:
+  - name: qtconsole-base
+  - name: qtconsole
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.6
+      run:
+        - python >=3.6
+        - {{ pin_subpackage('qtconsole-base', exact=True) }}
+        - pyqt
 
 about:
   home: http://jupyter.org
@@ -62,3 +74,4 @@ extra:
     - minrk
     - takluyver
     - ocefpaf
+  feedstock-name: qtconsole
