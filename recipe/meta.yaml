@@ -44,7 +44,7 @@ outputs:
         - python >=3.6
       run:
         - python >=3.6
-        - {{ pin_subpackage('qtconsole-base', exact=True) }}
+        - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
         - pyqt
     test:
       commands:
