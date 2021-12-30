@@ -40,6 +40,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-qtconsole-green.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtconsole.svg)](https://anaconda.org/conda-forge/qtconsole) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-qtconsole--base-green.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtconsole-base.svg)](https://anaconda.org/conda-forge/qtconsole-base) |
 
 Installing qtconsole
 ====================
@@ -51,10 +52,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `qtconsole` can be installed with:
+Once the `conda-forge` channel has been enabled, `qtconsole, qtconsole-base` can be installed with:
 
 ```
-conda install qtconsole
+conda install qtconsole qtconsole-base
 ```
 
 It is possible to list all of the versions of `qtconsole` available on your platform with:
