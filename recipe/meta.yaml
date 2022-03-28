@@ -17,17 +17,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - traitlets
     - ipython_genutils
     - jupyter_core
     - jupyter_client >=4.1
     - pygments
     - ipykernel >=4.1  # not a real dependency, but require the reference kernel
-    - qtpy
+    - qtpy >= 2.0.1
 
 test:
   imports:
@@ -41,9 +41,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.6
+        - python >=3.7
       run:
-        - python >=3.6
+        - python >=3.7
         - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
         - pyqt
     test:
