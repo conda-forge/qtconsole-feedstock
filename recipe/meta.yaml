@@ -1,4 +1,4 @@
-{% set version = "5.2.2" %}
+{% set version = "5.3.0" %}
 
 package:
   name: qtconsole-base
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 8f9db97b27782184efd0a0f2d57ea3bd852d053747a2e442a9011329c082976d
+  sha256: 8e3520fdc75e46abc4cc6cffeca16fa2652754109b8ae839fa28e27d1eba5625
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jupyter-qtconsole = qtconsole.qtconsoleapp:main
