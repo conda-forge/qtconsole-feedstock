@@ -1,4 +1,4 @@
-{% set version = "5.4.0" %}
+{% set version = "5.4.1" %}
 
 package:
   name: qtconsole-base
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 57748ea2fd26320a0b77adba20131cfbb13818c7c96d83fafcb110ff55f58b35
+  sha256: f67a03f40f722e13261791280f73068dbaf9dafcc335cbba644ccc8f892640e5
 
 build:
   noarch: python
