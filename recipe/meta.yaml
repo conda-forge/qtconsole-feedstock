@@ -1,4 +1,4 @@
-{% set version = "5.4.3" %}
+{% set version = "5.4.4" %}
 
 package:
   name: qtconsole-base
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 5e4082a86a201796b2a5cfd4298352d22b158b51b57736531824715fc2a979dd
+  sha256: b7ffb53d74f23cee29f4cdb55dd6fabc8ec312d94f3c46ba38e1dde458693dfb
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - jupyter_client >=4.1
     - pygments
     - ipykernel >=4.1  # not a real dependency, but require the reference kernel
-    - qtpy >=2.0.1
+    - qtpy >=2.4.0
     - packaging
 
 test:
