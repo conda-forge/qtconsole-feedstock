@@ -20,12 +20,11 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - traitlets
-    - ipython_genutils
     - jupyter_core
     - jupyter_client >=4.1
     - pygments
