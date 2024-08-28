@@ -44,10 +44,10 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
         - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
       run:
-        - python >=3.7
+        - python >=3.8
         - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
         - pyqt
     test:
