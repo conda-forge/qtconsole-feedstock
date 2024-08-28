@@ -1,4 +1,4 @@
-{% set version = "5.5.2" %}
+{% set version = "5.6.0" %}
 
 package:
   name: qtconsole-base
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 6b5fb11274b297463706af84dcbbd5c92273b1f619e6d25d08874b0a88516989
+  sha256: 4c82120a3b53a3d36e3f76e6a1a26ffddf4e1ce2359d56a19889c55e1d73a436
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python >=3.8
+    - setuptools
     - pip
   run:
     - python >=3.8
@@ -44,10 +45,10 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
         - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
       run:
-        - python >=3.7
+        - python >=3.8
         - {{ pin_subpackage('qtconsole-base', max_pin='x.x.x') }}
         - pyqt
     test:
