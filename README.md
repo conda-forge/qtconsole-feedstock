@@ -158,6 +158,7 @@ Feedstock Maintainers
 
 * [@Carreau](https://github.com/Carreau/)
 * [@ccordoba12](https://github.com/ccordoba12/)
+* [@dalthviz](https://github.com/dalthviz/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@minrk](https://github.com/minrk/)
 * [@ocefpaf](https://github.com/ocefpaf/)
