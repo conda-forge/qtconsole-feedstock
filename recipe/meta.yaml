@@ -1,4 +1,4 @@
-{% set version = "5.7.0" %}
+{% set version = "5.7.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/q/qtconsole/qtconsole-{{ version }}.tar.gz
-  sha256: 0d33371ce9ef554c7022ee300564ba9ffbd615e304ee615f6769d4068e063171
+  sha256: 5f0944cdaad2a0fca4aedf598352889b172e8dc7f57354bdd097ed92c6563a01
 
 build:
   noarch: python
